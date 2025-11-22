@@ -1,0 +1,465 @@
+/* Intro Section */
+
+.services-intro {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.intro-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--gray);
+}
+
+
+/* Peer Counseling Section */
+
+.peer-counseling-section {
+    padding: 80px 0;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid var(--gray-light);
+    border-radius: 12px;
+    padding: 35px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+    border-color: var(--primary-light);
+}
+
+.service-header {
+    display: flex;
+    gap: 15px;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.service-icon {
+    font-size: 42px;
+    flex-shrink: 0;
+}
+
+.service-header h3 {
+    font-size: 24px;
+    color: var(--dark);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.service-duration {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.service-description {
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.service-details {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.detail-item {
+    padding: 8px 0;
+    color: var(--dark);
+    font-size: 14px;
+}
+
+.detail-item strong {
+    color: var(--primary-dark);
+}
+
+
+/* Crisis Section */
+
+.crisis-section {
+    padding: 80px 0;
+    background: var(--light);
+    border-radius: 16px;
+    margin: 60px 0;
+}
+
+.crisis-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    padding: 0 40px;
+}
+
+.crisis-card {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s;
+    border: 1px solid var(--gray-light);
+}
+
+.crisis-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+}
+
+.crisis-card.primary {
+    background: linear-gradient(135deg, var(--secondary), #ff8787);
+    color: white;
+    border: none;
+    grid-column: span 3;
+}
+
+.crisis-card.primary h3,
+.crisis-card.primary p {
+    color: white;
+}
+
+.crisis-icon {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.crisis-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.crisis-card p {
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.crisis-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.crisis-note {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-top: 15px;
+}
+
+
+/* Workshops Section */
+
+.workshops-section {
+    padding: 80px 0;
+}
+
+.workshops-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--gray);
+}
+
+.workshop-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.workshop-category {
+    background: var(--light);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.workshop-category h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--dark);
+    font-weight: 700;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 10px;
+}
+
+.workshop-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.workshop-item {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary);
+    transition: all 0.3s;
+}
+
+.workshop-item:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transform: translateX(5px);
+}
+
+.workshop-item h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.workshop-item p {
+    color: var(--gray);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.workshop-duration {
+    display: inline-block;
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.workshop-cta {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    border: 2px solid var(--primary-light);
+}
+
+.workshop-cta p {
+    font-size: 17px;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+
+/* How It Works Section */
+
+.how-it-works {
+    padding: 80px 0;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.step {
+    text-align: center;
+    padding: 35px;
+    background: var(--light);
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.step:hover {
+    background: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.step p {
+    color: var(--gray);
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+
+/* FAQ Services */
+
+.faq-services {
+    padding: 80px 0;
+    background: var(--light);
+    border-radius: 16px;
+    margin: 60px 0;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+    padding: 0 40px;
+}
+
+.faq-item {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary);
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.faq-item p {
+    color: var(--gray);
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+
+/* CTA Section */
+
+.cta-section {
+    text-align: center;
+    padding: 80px 50px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border-radius: 16px;
+    margin: 80px 0;
+    color: white;
+}
+
+.cta-section h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.cta-section p {
+    font-size: 19px;
+    margin-bottom: 35px;
+    opacity: 0.95;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .crisis-card.primary {
+        grid-column: span 1;
+    }
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-content h2 {
+        font-size: 30px;
+    }
+    .service-card {
+        padding: 30px;
+    }
+    .service-header {
+        flex-direction: column;
+    }
+    .crisis-cards,
+    .faq-grid {
+        padding: 0 20px;
+        grid-template-columns: 1fr;
+    }
+    .workshop-list {
+        grid-template-columns: 1fr;
+    }
+    .workshop-category {
+        padding: 30px 20px;
+    }
+    .steps {
+        grid-template-columns: 1fr;
+    }
+    .cta-section {
+        padding: 60px 30px;
+    }
+    .cta-section h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-content h2 {
+        font-size: 26px;
+    }
+    .service-header h3 {
+        font-size: 21px;
+    }
+    .crisis-card h3 {
+        font-size: 21px;
+    }
+    .workshop-category h3 {
+        font-size: 24px;
+    }
+    .cta-section h2 {
+        font-size: 28px;
+    }
+}
